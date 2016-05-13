@@ -16,6 +16,12 @@
 <loc>/about/</loc>
 </url>
 <url>
+<loc>/blog/</loc>
+</url>
+<url>
 <loc>/</loc>
+</url>
+<url>
+<loc>/docs/quick-start-guide/</loc>
 </url>
 </urlset>

@@ -14,7 +14,7 @@ adcircusers:
     - image_path: splash1.png
       alt: "Cool ADCIRC Image #1"
       title: "For Users"
-      excerpt: 'ADCIRC.io allows ADCIRC users to visually explore and interact with their ADCIRC data. Validate your meshes by seamlessly visualizing and interacting with them in 2D or 3D. Explore maxes, mins, and full timeseries of your ADCIRC runs for individual nodes, or for the mesh as a whole. ADCIRC.io is the tool you need to get at the data you want, all from within the browser.'
+      excerpt: 'ADCIRC.io allows you to visually explore and interact with all of your ADCIRC data. Validate your meshes by seamlessly visualizing and interacting with them in 2D or 3D. Explore maxes, mins, and full timeseries of your ADCIRC runs for individual nodes, or for the mesh as a whole. ADCIRC.io is the tool you need to get at the data you want, all from within the browser.'
       url: "/about/"
       btn_label: "Get Started"
       btn_class: "btn--inverse"
@@ -23,7 +23,7 @@ adcircdevelopers:
     - image_path: splash2.png
       alt: "Cool ADCIRC Image #1"
       title: "For Developers"
-      excerpt: 'ADCIRC.io is open source and therefore relies on the community for development. The app itself is written almost entirely in Javascript, and makes use of many open source libraries such as [three.js](http://threejs.org/) and [Bootstrap](http://getbootstrap.com/). We welcome and encourage ADCIRC developers and users to make contributions by adding features, fixing or reporting bugs, or suggesting features that they need.'
+      excerpt: 'ADCIRC.io is open source and therefore relies on the community for development. The app itself is written almost entirely in Javascript, and makes use of open source libraries such as [three.js](http://threejs.org/) and [Bootstrap](http://getbootstrap.com/). We welcome and encourage ADCIRC developers and users to make contributions by adding features, fixing or reporting bugs, or suggesting features that they would like to see implemented.'
       url: "/about/"
       btn_label: "How to Contribute"
       btn_class: "btn--inverse"
@@ -36,9 +36,17 @@ adcircdevelopers:
 
 
 <h1 class="archive__title">Recent Blog Posts</h1>
-{% for post in paginator.posts %}
-    {% include archive-single-custom.html %}
-{% endfor %}
+<div class="row">
+    <div class="col-md-2">
+        <p></p>
+        {% include author-profile.html %}
+    </div>
+    <div class="col-md-10">
+        {% for post in paginator.posts %}
+            {% include archive-single-custom.html %}
+        {% endfor %}
+    </div>
+</div>
 
 
 

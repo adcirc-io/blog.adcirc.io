@@ -1,7 +1,7 @@
 # main links links
 main:
   - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    url: /docs/quick-start-guide/
 
   - title: "Tutorials"
     url: https://mmistakes.github.io/minimal-mistakes/year-archive/
@@ -10,7 +10,29 @@ main:
     url: https://mmistakes.github.io/minimal-mistakes/page-archive/
 
   - title: "Blog"
-    url: https://mmistakes.github.io/minimal-mistakes/collection-archive/
+    url: /blog/
 
   - title: "About"
     url: /about/
+
+# documentation links
+docs:
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        url: /docs/quick-start-guide/
+      - title: "A Tour of the Interface"
+        url: /
+      - title: "Loading a Mesh"
+        url: /
+      - title: "Interacting with a Mesh"
+        url: /
+      - title: "Loading the Rest of Your Data"
+        url: /
+
+  - title: Working With Meshes
+    children:
+      - title: "Selecting Nodes"
+        url: /
+      - title: "Selecting Elements"
+        url: /
