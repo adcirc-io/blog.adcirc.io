@@ -11,7 +11,7 @@ title                    : "ADCIRC.io"
 title_separator          : "-"
 name                     : "Tristan Dyer"
 description              : "Powerful web-based ADCIRC data visualization tools"
-url                      : "http://adcirc.io"
+url                      : # don't put anything here...
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  : "https://github.com/adcirc-io"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
