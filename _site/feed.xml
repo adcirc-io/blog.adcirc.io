@@ -1,8 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-06-15T17:46:16-04:00</updated><id>/</id><title>ADCIRC.io</title><subtitle>Powerful web-based ADCIRC data visualization tools</subtitle><author><name>Tristan Dyer</name></author><entry><title>The Many Libraries of ADCIRC.io</title><link href="/libraries/" rel="alternate" type="text/html" title="The Many Libraries of ADCIRC.io" /><published>2016-06-15T00:00:00-04:00</published><updated>2016-06-15T00:00:00-04:00</updated><id>/libraries</id><content type="html" xml:base="/libraries/">&lt;p&gt;As I’ve made my way through the first few months of development of ADCIRC.io, there is one thing that has become abundantly clear: there is a library for just about everything in Javascript. And not just libraries that are used in the code itself, but libraries that are used to help &lt;em&gt;write&lt;/em&gt; the code itself. So I thought it might be appropriate at this stage in development, having written some 15,000-odd lines of code thus far, to take a quick step back and take a look at all of the code that I use but &lt;em&gt;haven’t&lt;/em&gt; written.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2016-06-16T15:14:50-04:00</updated><id>/</id><title>ADCIRC.io</title><subtitle>Powerful web-based ADCIRC data visualization tools</subtitle><author><name>Tristan Dyer</name></author><entry><title>The Many Libraries of ADCIRC.io</title><link href="/libraries/" rel="alternate" type="text/html" title="The Many Libraries of ADCIRC.io" /><published>2016-06-15T00:00:00-04:00</published><updated>2016-06-15T00:00:00-04:00</updated><id>/libraries</id><content type="html" xml:base="/libraries/">&lt;p&gt;As I’ve made my way through the first few months of development of ADCIRC.io, there is one thing that has become abundantly clear: there is a library for just about everything in Javascript. And not just libraries that are used in the code itself, but libraries that are used to help &lt;em&gt;write&lt;/em&gt; the code itself. So I thought it might be appropriate at this stage in development, having written some 15,000-odd lines of code thus far, to take a quick step back and take a look at all of the code that I use but &lt;em&gt;haven’t&lt;/em&gt; written.&lt;/p&gt;
 
-&lt;h1 id=&quot;threejs&quot;&gt;three.js&lt;/h1&gt;
+&lt;h1 id=&quot;the-list&quot;&gt;The List&lt;/h1&gt;
 
-&lt;p&gt;We’ll start off with the library that does most of the heavy lifting in ADCIRC.io, &lt;a href=&quot;http://threejs.org&quot;&gt;three.js&lt;/a&gt;. Three.js is a lightweight 3D library that takes advantage of the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt; element in HTML5, which exposes WebGL functionality. Put more simply, it lets us do really cool 3D visualization within the browser by giving the browser access to your computer’s graphics card.&lt;/p&gt;
+&lt;p&gt;First, a list of all of the libraries. Well, two lists, one for libraries ADCIRC.io uses and one for libraries used to create ADCIRC.io. I’ll include a little blurb about each one in the following sections talking about what the library is and how it is used in ADCIRC.io.&lt;/p&gt;
+
+&lt;h2 id=&quot;production-libraries&quot;&gt;Production Libraries&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://threejs.org&quot;&gt;Three.js&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jquery.com/&quot;&gt;jQuery&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://d3js.org/&quot;&gt;D3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mrdoob/eventdispatcher.js&quot;&gt;EventDispatcher&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://handlebarsjs.com/&quot;&gt;Handlebars&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lodash.com/&quot;&gt;Lodash&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;development-libraries&quot;&gt;Development Libraries&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node + npm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://gruntjs.com/&quot;&gt;Grunt&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/MathiasPaumgarten/grunt-bake&quot;&gt;grunt-bake&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/gruntjs/grunt-contrib-concat&quot;&gt;grunt-contrib-concat&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/gruntjs/grunt-contrib-uglify&quot;&gt;grunt-contrib-uglify&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/gruntjs/grunt-contrib-jshint&quot;&gt;grunt-contrib-jshint&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/gruntjs/grunt-contrib-htmlmin&quot;&gt;grunt-contrib-htmlmin&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/gruntjs/grunt-contrib-watch&quot;&gt;grunt-contrib-watch&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/gruntjs/grunt-contrib-handlebars&quot;&gt;grunt-contrib-handlebars&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://handlebarsjs.com/&quot;&gt;Handlebars&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;threejs&quot;&gt;Three.js&lt;/h1&gt;
+
+&lt;p&gt;We’ll start off with the library that does most of the heavy lifting in ADCIRC.io, &lt;a href=&quot;http://threejs.org&quot;&gt;three.js&lt;/a&gt;. As the name implies, three.js is a lightweight 3D library that takes advantage of the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt; element in HTML5, which exposes WebGL functionality. Put more simply, it lets us do really cool 3D visualization, like the one seen below, within the browser by giving the browser access to your computer’s graphics card.&lt;/p&gt;
 
 &lt;div id=&quot;three_js_geometry_example&quot;&gt;&lt;/div&gt;
 
